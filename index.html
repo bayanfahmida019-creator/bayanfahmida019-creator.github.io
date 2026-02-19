@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahmida Islam Bayan — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Intro Animation -->
+  <div id="intro">
+    <h1 class="intro-line" id="hi">Hi</h1>
+    <h2 class="intro-line" id="name">I'm <span>Fahmida Islam Bayan</span></h2>
+    <div class="intro-line" id="ican-container">
+      <p id="ican">I can <span class="scroll-skill" id="skill"></span></p>
+    </div>
+    
+    <!-- Windows-style Loading Animation -->
+    <div class="loading-container">
+      <div class="windows-loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <!-- Floating shapes for minimal motion aesthetic -->
+    <div class="ps-shape ps-circle"></div>
+    <div class="ps-shape ps-cross"></div>
+    <div class="ps-shape ps-square"></div>
+    <div class="ps-shape ps-triangle"></div>
+    <div class="ps-shape ps-circle" style="left: 70%; animation-delay: 1.5s;"></div>
+    <div class="ps-shape ps-square" style="left: 85%; animation-delay: 2.5s;"></div>
+
+    <nav>
+      <div class="nav-brand">
+        <img src="Photos/self_pic.jpeg" alt="Fahmida Islam Bayan" class="nav-profile-pic" />
+        <strong>Fahmida Islam Bayan</strong>
+      </div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Fahmida Islam Bayan</h1>
+        <p class="subtitle">AI Engineer • Developer</p>
+        <p class="tagline">
+            Hi, and welcome to my portfolio. I’m Fahmida Islam Bayan, a Computer Science and Engineering student at AIUB with a strong interest in Artificial Intelligence and AI development. I am passionate about building intelligent systems that can solve real-world problems and make everyday processes smarter and more efficient.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <img src="Photos/self_pic.jpeg" alt="Profile Photo" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-text">
+
+          <p>
+              I’m Fahmida Islam Bayan, a Computer Science and Engineering student with a strong interest in Artificial Intelligence and AI development. I focus on machine learning, data-driven systems, and building intelligent solutions that solve real-world problems.
+          </p>
+
+          <p>
+              I enjoy exploring how models learn from data, how algorithms make decisions, and how AI systems can be designed to be efficient and reliable. Whether it’s training machine learning models, working with datasets, or experimenting with new AI tools and frameworks, I like improving my skills through hands-on projects.
+          </p>
+
+          <p>
+              Outside of technical work, I’m also interested in clean design and user experience — building AI solutions that are not only powerful, but also intuitive, practical, and easy to use.
+          </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-item" data-skill="cpp"><span>C++</span></div>
+        <div class="skill-item" data-skill="java"><span>Java</span></div>
+        <div class="skill-item" data-skill="Python"><span>Python</span></div>
+        <div class="skill-item" data-skill="sql"><span>SQL</span></div>
+        <div class="skill-item" data-skill="networking"><span>Networking</span></div>
+        <div class="skill-item" data-skill="git"><span>Git</span></div>
+        <div class="skill-item" data-skill="htmlcss"><span>HTML & CSS</span></div>
+        <div class="skill-item" data-skill="javascript"><span>JavaScript</span></div>
+      </div>
+      
+      <!-- Skill Descriptions Container -->
+      <div class="skill-description-container">
+        <div class="skill-description" data-skill="cpp">
+          I have a strong understanding and academic background in C++ and use the language to write efficient, reliable programs. My coursework and projects helped me build a deep understanding of memory management, algorithms, and object oriented design, which I apply confidently in problem solving and system level work.
+        </div>
+        <div class="skill-description" data-skill="java">
+          I have a solid command of Java and use it to develop structured, maintainable applications. My experience with object oriented principles allows me to design clean architectures that scale well and behave predictably.
+        </div>
+        <div class="skill-description" data-skill="Python">
+            Proficient in Python for AI and software development, with experience in data analysis, machine learning, and problem-solving. Skilled in using libraries such as NumPy, Pandas, and Scikit-learn to build and evaluate models, preprocess data, and implement efficient solutions.
+        </div>
+        <div class="skill-description" data-skill="sql">
+            Experienced in SQL for managing and querying relational databases. Able to write efficient queries to retrieve, filter, and analyze structured data, as well as perform joins, aggregations, and basic database management tasks.
+        </div>
+        <div class="skill-description" data-skill="networking">
+          I understand core networking concepts such as routing, addressing, and protocols. I can work with configuration tasks and analyze how systems communicate across different layers of a network.
+        </div>
+        <div class="skill-description" data-skill="git">
+          I use Git confidently to track progress, manage branches, and keep projects organized. It helps me maintain clean workflows and collaborate effectively when needed.
+        </div>
+        <div class="skill-description" data-skill="htmlcss">
+          I create clean, responsive website layouts using HTML and CSS. I focus on structure, readability, and visual clarity while ensuring the design adapts well across devices.
+        </div>
+        <div class="skill-description" data-skill="javascript">
+          I use JavaScript to add interactivity and dynamic behavior to websites. It helps me bring static pages to life with practical features that enhance the user experience.
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <article>
+        <h3>Grocery Management System (Java)</h3>
+        <p>
+            Developed a Java-based Grocery Management System to manage products, inventory, and sales efficiently. The project applied object-oriented programming concepts and strengthened my understanding of data handling and system design.
+        </p>
+      </article>
+      <article>
+        <h3>Student Management System (C++)</h3>
+        <p>Console-based CRUD system for managing student records using file handling and OOP.</p>
+      </article>
+      <article>
+        <h3>Snake Game (Java)</h3>
+        <p>Classic snake game with smooth keyboard controls and a scoring system.</p>
+      </article>
+      <article>
+        <h3>Portfolio Website</h3>
+        <p>This very website — clean, minimal, and responsive design built using HTML, CSS, and JavaScript.</p>
+      </article>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-item">
+        <h3>C++ Instructor — Binary IT Ltd</h3>
+        <p>
+          Taught beginner to intermediate C++ concepts including OOP, STL, and debugging techniques. 
+          Guided students through coding exercises and assessments.
+        </p>
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>nsakib.codes@gmail.com | +880 1732-550883</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/md-nazmus-sakib-ab7567312/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/NSakib01" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.instagram.com/n.sakib_01/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2025 MD. Nazmus Sakib — Built with care.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
