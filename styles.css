@@ -116,7 +116,7 @@ header::after {
 @keyframes floatShape {
   0%, 100% { 
     transform: translateY(0) rotate(0deg); 
-    opacity: 0.4;
+    opacity: 1.4;
   }
   50% { 
     transform: translateY(-20px) rotate(180deg); 
@@ -229,9 +229,9 @@ section {max-width:1100px; margin:auto; padding:80px 20px;}
 /* Static pastel box - larger, in background */
 .hero::before {
   width: 115%;
-  height: 55%;
+  height: 50%;
   background: linear-gradient(135deg, rgba(255, 238, 248, 0.7) 0%, rgba(232, 244, 255, 0.7) 100%);
-  top: 30%;
+  top: 25%;
   bottom : -3%;
   left: -5.5%;
   right: 10%;
@@ -244,27 +244,20 @@ section {max-width:1100px; margin:auto; padding:80px 20px;}
   width: 105%;
   height: 50%;
   background: rgba(255, 255, 255, 0.8);
-  top: 30%;
+  top: 25%;
   bottom: 10%;
   left: -3%;
   right: 0%;
   border: 2px solid rgba(102, 126, 234, 0.3);
   box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
-  animation: heroFloat 6s ease-in-out infinite;
+  
   transform: translate3d(0, 0, 0);
   will-change: transform;
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
-@keyframes heroFloat {
-  0%, 100% { 
-    transform: translate3d(0, 0, 0);
-  }
-  50% { 
-    transform: translate3d(5px, -15px, 0);
-  }
-}
+
 
 @keyframes heroFloat {
   0%, 100% { 
@@ -374,7 +367,7 @@ section {max-width:1100px; margin:auto; padding:80px 20px;}
   left: -3%;
   border: 2px solid rgba(126, 234, 102, 0.3);
   box-shadow: 0 15px 40px rgba(102, 234, 126, 0.15);
-  animation: aboutFloat 7s ease-in-out infinite;
+
   transform: translate3d(0, 0, 0);
   will-change: transform;
   backface-visibility: hidden;
@@ -429,14 +422,14 @@ section {max-width:1100px; margin:auto; padding:80px 20px;}
 }
 
 #projects::after {
-  width: 105%;
-  height: 85%;
+  width: 115%;
+  height: 90%;
   background: rgba(255, 255, 255, 0.8);
-  top: 7.5%;
+  top: 5%;
   left: -3%;
   border: 2px solid rgba(234, 102, 186, 0.3);
   box-shadow: 0 15px 40px rgba(186, 102, 234, 0.15);
-  animation: projectsFloat 6.5s ease-in-out infinite;
+  /*animation: projectsFloat 6.5s ease-in-out infinite; */
   transform: translate3d(0, 0, 0);
   will-change: transform;
   backface-visibility: hidden;
@@ -498,7 +491,7 @@ section {max-width:1100px; margin:auto; padding:80px 20px;}
   left: -3%;
   border: 2px solid rgba(234, 186, 102, 0.3);
   box-shadow: 0 15px 40px rgba(234, 186, 102, 0.15);
-  animation: experienceFloat 8s ease-in-out infinite;
+  /*animation: experienceFloat 8s ease-in-out infinite;*/
   transform: translate3d(0, 0, 0);
   will-change: transform;
   backface-visibility: hidden;
@@ -792,4 +785,86 @@ footer {text-align:center; padding:40px 20px; color:#666; font-size:0.9rem;}
     transform: scale(1.2);
     opacity: 1;
   }
+}
+
+/* --- Contact Query Form --- */
+.query-container {
+  position: relative;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+  z-index: 2;
+}
+
+.query-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.query-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.query-form input,
+.query-form textarea {
+  padding: 12px 15px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.query-form button {
+  align-self: center;
+  margin-top: 10px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.query-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Project Image Gallery --- */
+.project-gallery {
+  margin-top: 20px;
+  margin-bottom:20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-gallery img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
 }
